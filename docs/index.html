@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Indian Railways Timetable Analysis - MapReduce</title>
+    <meta name="description" content="Analysis of Indian Railways Timetable using Hadoop MapReduce">
+    <meta name="author" content="Aashish Nehete">
+    <meta name="keywords" content="analysis, big data, indian railways, timetable, geovisualisation, hadoop, mapreduce">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:300" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/skeleton.css">
+    <style>
+        body {
+            font-family: 'Lato', sans-serif;
+            margin-top: 5vh;
+        }
+
+        p {
+            font-size: 1.8rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Analysis of Indian Railways Timetable</h1>
+        <p>Hadoop MapReduce analysis on the timtable of Indian Railways along with visualisations.</p>
+        <h4>Data</h4>
+        <p>Source:
+            <a target="_blank"
+                href="https://data.gov.in/resources/indian-railways-time-table-trains-available-reservation-01112017">data.gov.in</a>
+        </p>
+        <table>
+            <thead>
+                <tr>
+                    <th>Column</th>
+                    <th>Explanation</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Train No</td>
+                    <td>Train Number</td>
+                </tr>
+                <tr>
+                    <td>Train Name</td>
+                    <td>Name of the Train</td>
+                </tr>
+                <tr>
+                    <td>SEQ</td>
+                    <td>nth stop along the route</td>
+                </tr>
+                <tr>
+                    <td>Station Code</td>
+                    <td>Code of the Station</td>
+                </tr>
+                <tr>
+                    <td>Station Name</td>
+                    <td>Name of the Station</td>
+                </tr>
+                <tr>
+                    <td>Arrival Time</td>
+                    <td>Arrival Time (HH:MM:SS)</td>
+                </tr>
+                <tr>
+                    <td>Departure Time</td>
+                    <td>Departure Time (HH:MM:SS)</td>
+                </tr>
+                <tr>
+                    <td>Distance</td>
+                    <td>Distance (kilometers)</td>
+                </tr>
+                <tr>
+                    <td>Source Station Code</td>
+                    <td>Source Station code</td>
+                </tr>
+                <tr>
+                    <td>Source Station Name</td>
+                    <td>Source Station Name</td>
+                </tr>
+                <tr>
+                    <td>Destination Station Code</td>
+                    <td>Destination Station Code</td>
+                </tr>
+                <tr>
+                    <td>Destination Station Name</td>
+                    <td>Destination station name</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h4>Analysis</h4>
+        <h5>Total Distance Travelled From Each Station</h5>
+        <h5>Total Trains Originating From Each Station</h5>
+        <h5>Number Of Trains Stopping At Each Station</h5>
+        <h5>Distribution Of Travel Distances</h5>
+    </div>
+</body>
+
+</html>
