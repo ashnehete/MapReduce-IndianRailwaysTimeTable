@@ -23,6 +23,15 @@
         p {
             font-size: 1.8rem;
         }
+
+        footer {
+            margin-bottom: 5vh;
+            text-align: center;
+        }
+
+        thead {
+            text-transform: capitalize;
+        }
     </style>
 </head>
 
@@ -100,20 +109,27 @@
         <iframe width="100%" height="520" frameborder="0"
             src="https://ashnehete.carto.com/builder/473cd45a-1536-4b3c-b1ad-eec9822187bf/embed" allowfullscreen
             webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
+        <table id="t1"></table>
         <hr>
         <h5>Total Trains Originating From Each Station</h5>
         <iframe width="100%" height="520" framebordewr="0"
             src="https://ashnehete.carto.com/builder/86803d48-69cd-47bd-96b4-02d4426189d1/embed" allowfullscreen
             webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
+        <table id="t2"></table>
         <hr>
         <h5>Number Of Trains Stopping At Each Station</h5>
         <iframe width="100%" height="520" frameborder="0"
             src="https://ashnehete.carto.com/builder/91ab7021-4027-4685-a0d5-5c3bd9855fbb/embed" allowfullscreen
             webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
+        <table id="t3"></table>
         <hr>
         <h5>Distribution Of Travel Distances</h5>
         <canvas width="100%" height="50px" id="distribution"></canvas>
+        <table id="t4"></table>
         <hr>
+        <footer>
+            Made with &hearts; by <a href="https://ashnehete.in" target="_blank">@ashnehete</a>
+        </footer>
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.bundle.min.js"></script>
