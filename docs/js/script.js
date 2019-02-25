@@ -41,6 +41,15 @@ Papa.parse('formatted_output/DistanceDistribution.csv', {
     }
 })
 
+Papa.parse('formatted_output/Search.csv', {
+    download: true,
+    header: true,
+    dynamicTyping: true,
+    complete: (results) => {
+        renderTable(t5, results.data, results.meta.fields)
+    }
+})
+
 function renderHistogram(data) {
     let ctx = distribution.getContext('2d')
     let chart = new Chart(ctx, {
